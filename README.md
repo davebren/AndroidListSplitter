@@ -10,8 +10,7 @@ A custom view library that enables ExpandableListViews to be split automatically
 
 
 
-You can convert between any number of list views by simply extending the ExpandableListSplitter and ExpandableListSplitterAdapter.
-
+AndroidListSplitter can convert between any number of views, so far I have tried 1 and 2, as well as 2 and 3.
 
 ### Steps for ExpandableListSplitter (Reference the files in the demo folder):
 
