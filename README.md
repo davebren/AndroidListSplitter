@@ -3,7 +3,7 @@ AndroidListSplitter
 
 A custom view library that enables ExpandableListViews to be split automatically between orientation changes.
 
-[![ScreenShot](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](http://youtu.be/_YH4ca8sqWU)
+[![ScreenShot](https://raw.github.com/eskimoapps/AndroidListSplitter/master/screenshots/youtube_image.png)](http://youtu.be/_YH4ca8sqWU)
 
 
 ![Screenshot](screenshots/combined.png)
