@@ -3,8 +3,7 @@ AndroidListSplitter
 
 A custom view library that enables ExpandableListViews to be split automatically between orientation changes.
 
-![Screenshot](screenshots/one_list.png)
-![Screenshot](screenshots/two_lists.png)
+![Screenshot](screenshots/one_list.png) ![Screenshot](screenshots/two_lists.png)
 
 
 
