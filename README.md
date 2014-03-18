@@ -12,7 +12,9 @@ A custom view library that enables ExpandableListViews to be split automatically
 
 You can convert between any number of list views by simply extending the ExpandableListSplitter and ExpandableListSplitterAdapter.
 
+
 Steps for ExpandableListSplitter (Reference the files in the demo folder):
+===================
 
 1. Copy the folder org.eski.list_splitter into your source folder.
 
