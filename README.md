@@ -10,8 +10,26 @@ A custom view library that enables ExpandableListViews to be split automatically
 
 
 
-You can convert between any number of list views by simply extending the ExpandableListSplitter and ExpandableListSplitterAdapter.  You only need one instance of each, and the AndroidListSplitter will do the rest of the work.
+You can convert between any number of list views by simply extending the ExpandableListSplitter and ExpandableListSplitterAdapter.
 
+Steps for ExpandableListSplitter (Reference the files in the demo folder):
+
+1. Copy the folder org.eski.list_splitter into your source folder.
+
+2. Create a fragment will inflate your list view(s), and extend ExpandableListSplitter.
+
+3. Extend ExpandableListSplitterAdapter, and have your constructor call the super constructor with the total number of group rows, and the number of children in each group.
+    3.1: DO NOT override the getGroupCount, getChildCount, getGroupId, or getChildId methods, these will be handled by the base class by the base class.
+    3.2: When overriding getGroupView use getSplitGroupIndex in order to get the group position across all the split ExpandableListViews
+    3.3: If you need to override onGroupExpanded and onGroupCollapsed, make sure you call the super methods, they retain the expansion state of your groups.
+    3.4: Override the copy() method to return a new instance of your adapter.  This is used to split your adapter.
+
+4. In OnCreateView, call split(), and pass in your inflated layout, and your adapter.
+
+5. When you create a new instance of your fragment, before you add it call setResourceIds.
+    5.1: pass an int[] containing all of the layout's ExpandableListView ids, for each orientation layout (see TestActivity.java in demo folder).
+
+6. Enjoy.
 
 
 LICENSE
