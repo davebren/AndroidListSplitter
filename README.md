@@ -1,3 +1,4 @@
+*Disclaimer:* This library isn't actively supported (it's fragment based and I no longer use fragments).
 AndroidListSplitter
 ===================
 
